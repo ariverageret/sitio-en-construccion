@@ -3,26 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitio en Construcción</title>
+  <title>Club de Lectura - En Construcción</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #007bff, #00bcd4);
-      color: white;
-      height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a237e, #283593, #3f51b5);
+      color: #fff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
     }
-    h1 { font-size: 3em; margin-bottom: 0.3em; }
-    p { font-size: 1.2em; }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.5em;
+      letter-spacing: 1px;
+    }
+    h2 {
+      font-size: 1.5em;
+      font-weight: 400;
+      color: #c5cae9;
+      margin-bottom: 1.5em;
+    }
+    .libros {
+      font-size: 5em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      font-size: 1.1em;
+      color: #e8eaf6;
+      margin-bottom: 1em;
+      max-width: 500px;
+    }
+    a {
+      color: #ffeb3b;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a:hover {
+      color: #fff59d;
+      text-shadow: 0 0 8px #fff59d;
+    }
+    footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 0.9em;
+      color: #c5cae9;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade {
+      animation: fadeIn 1.2s ease forwards;
+    }
   </style>
 </head>
 <body>
-  <h1>🚧 Sitio en Construcción 🚧</h1>
-  <p>Estamos trabajando para traerte algo increíble. Vuelve pronto.</p>
+  <div class="fade">
+    <div class="libros">📖</div>
+    <h1>Clubes de Lectura</h1>
+    <h2>Estamos construyendo una nueva experiencia para lectores apasionados</h2>
+    <p>
+      Pronto podrás unirte a comunidades donde leer, comentar y descubrir nuevos mundos literarios.  
+      Mientras tanto, si deseas más información o colaborar en el proyecto, contáctame en:
+    </p>
+    <p><a href="mailto:aleparique@gmail.com">aleparique@gmail.com</a></p>
+  </div>
+
+  <footer>© 2025 Clubes de Lectura — Todos los derechos reservados</footer>
 </body>
 </html>
